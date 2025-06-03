@@ -27,5 +27,11 @@ public class CalculadoraControl {
         int resultado = op.restar(num1, num2);
         esd.mostrarResultado(resultado);
     }
+
+    public void multiplicacion() {
+    }
+
+    public void division() {
+    }
     
 }

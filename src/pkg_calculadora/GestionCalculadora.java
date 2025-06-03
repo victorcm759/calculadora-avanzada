@@ -32,10 +32,10 @@ public class GestionCalculadora {
                     cc.resta();
                     break;
                 case 3:
-                    // cc.multiplicacion();
+                    cc.multiplicacion();
                     break;
                 case 4:
-                    // cc.division();
+                    cc.division();
                     break;
                 case 99:
                     salir = true;
