@@ -26,6 +26,16 @@ public class GestionCalculadora {
             int opcion = esd.introducirValorEnteroPositivo();
             switch (opcion) {
                 case 1:
+                    cc.suma();
+                    break;
+                case 2:
+                    // cc.resta();
+                    break;
+                case 3:
+                    // cc.multiplicacion();
+                    break;
+                case 4:
+                    // cc.division();
                     break;
                 case 99:
                     salir = true;

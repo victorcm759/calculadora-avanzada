@@ -9,6 +9,10 @@ public class EntradaSalidaDatos {
         sc = new Scanner(System.in);
     }
     
+    public void mostrarResultado(int resultado) {
+        mostrarCadena("Resultado: " + resultado);
+    }
+    
     public void mostrarCadena(String cadena) {
         System.out.println(cadena);
     }
