@@ -29,9 +29,26 @@ public class CalculadoraControl {
     }
 
     public void multiplicacion() {
+        esd.mostrarCadena("Introduce primer número: ");
+        int num1 = esd.introducirValorEnteroPositivo();
+        esd.mostrarCadena("Introduce segundo número: ");
+        int num2 = esd.introducirValorEnteroPositivo();
+        int resultado = op.multiplicar(num1, num2);
+        esd.mostrarResultado(resultado);
     }
 
     public void division() {
+        esd.mostrarCadena("Introduce primer número: ");
+        int num1 = esd.introducirValorEnteroPositivo();
+        esd.mostrarCadena("Introduce segundo número: ");
+        int num2 = esd.introducirValorEnteroPositivo();
+        int resultado = 0;
+        if (num2 == 0) {
+            esd.mostrarCadena("¡No se puede dividir entre cero!");
+        } else {
+            resultado = op.dividir(num1, num2);
+        }
+        esd.mostrarResultado(resultado);
     }
     
 }
