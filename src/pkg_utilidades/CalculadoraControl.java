@@ -50,5 +50,40 @@ public class CalculadoraControl {
         }
         esd.mostrarResultado(resultado);
     }
+
+    public void factorial() {
+        esd.mostrarCadena("Introduce un número: ");
+        int num = esd.introducirValorEnteroPositivo();
+        long resultado = op.factorial(num);
+        esd.mostrarResultado(resultado);
+    }
+
+    public void numPrimo() {
+        esd.mostrarCadena("Introduce un número: ");
+        int num = esd.introducirValorEnteroPositivo();
+        boolean resultado = op.esPrimo(num);
+        esd.mostrarResultado(resultado);
+    }
+
+    public void esPar() {
+        esd.mostrarCadena("Introduce un número: ");
+        int num = esd.introducirValorEnteroPositivo();
+        boolean resultado = op.esPar(num);
+        esd.mostrarResultado(resultado);
+    }
+
+    public void raizCuadrada() {
+        esd.mostrarCadena("Introduce un número: ");
+        int num = esd.introducirValorEnteroPositivo();
+        double resultado = op.raizCuadrada(num);
+        esd.mostrarResultado(resultado);
+    }
+
+    public void yearBisiesto() {
+        esd.mostrarCadena("Introduce un año: ");
+        int year = esd.introducirValorEnteroPositivo();
+        boolean resultado = op.yearBisiesto(year);
+        esd.mostrarResultado(resultado);
+    }
     
 }
