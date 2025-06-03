@@ -29,7 +29,7 @@ public class GestionCalculadora {
                     cc.suma();
                     break;
                 case 2:
-                    // cc.resta();
+                    cc.resta();
                     break;
                 case 3:
                     // cc.multiplicacion();

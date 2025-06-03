@@ -18,5 +18,14 @@ public class CalculadoraControl {
         int resultado = op.sumar(num1, num2);
         esd.mostrarResultado(resultado);
     }
+
+    public void resta() {
+        esd.mostrarCadena("Introduce primer número: ");
+        int num1 = esd.introducirValorEnteroPositivo();
+        esd.mostrarCadena("Introduce segundo número: ");
+        int num2 = esd.introducirValorEnteroPositivo();
+        int resultado = op.restar(num1, num2);
+        esd.mostrarResultado(resultado);
+    }
     
 }
